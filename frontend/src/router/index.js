@@ -1,11 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
-  { path: '/', name: 'dashboard', component: () => import('../views/dashboard.vue') },
-  { path: '/calendar', name: 'dalendar', component: () => import('../views/calendar.vue') },
-  { path: '/list', name: 'daintenanceLsit', component: () => import('../views/maintenanceList.vue') },
-  { path: '/list/:id', name: 'maintenanceSearch', component: () => import('../views/maintenanceSearch.vue'), props: true },
-  { path: '/register', name: 'Register', component: () => import('../views/Register.vue') 
+  { path: '/', name: 'Dashboard', component: () => import('../views/DashboardView.vue') },
+  { path: '/calendario', name: 'Calendario', component: () => import('../views/CalendarView.vue') },
+  { path: '/lista', name: 'ListaManutencoes', component: () => import('../views/MaintenanceListView.vue') },
+  { path: '/lista/:id', name: 'DetalhesManutencao', component: () => import('../views/MaintenanceDetailView.vue'), props: true },
+  
+  // NOVA ROTA
+  { 
+    path: '/cadastros', 
+    name: 'Cadastros', 
+    component: () => import('../views/RegistersView.vue') 
   }
 ];
 

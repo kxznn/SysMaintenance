@@ -1,10 +1,10 @@
 <script setup>
-import Navbar from './components/navbar.vue';
+import Sidebar from './components/Sidebar.vue';
 </script>
 
 <template>
   <div class="flex">
-    <Navbar />
+    <Sidebar />
     <main class="flex-1 p-8">
       <router-view></router-view> </main>
   </div>
