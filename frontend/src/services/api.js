@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'https://formativa-front-faculdade.onrender.com/api', 
+  baseURL: 'https://sysmaintenance-1.onrender.com', 
   headers: {
     'Content-Type': 'application/json',
   },
