@@ -6,7 +6,7 @@ const app = express()
 
 const PORT = 4000
 
-const MONGO_URI = "mongodb+srv://kaua:Ka030607@cluster0.pxsnorp.mongodb.net/SysMaintenance?retryWrites=true&w=majority"
+const MONGO_URI = "mongodb+srv://kaua:Ka030607@cluster0.pxsnorp.mongodb.net/?appName=Cluster0"
 
 app.use(express.json())
 app.use(cors())
